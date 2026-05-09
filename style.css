@@ -12,6 +12,7 @@
 .container{
   display: flex;
   flex-direction: column;
+  height: 100vh;
 }
 /* ========================= */
 /* NAVBAR BASE */
@@ -123,12 +124,60 @@ nav > .nav-right > button i {
 
 main{
   flex: 1;
-  background-color: yellow;
+  background-color: rgb(196, 144, 123);
   width: 100%;
 }
 /* Left Navigation */
+.left-navigation{
+  height: 100%;
+  width: 380px;
+  overflow-y: scroll;
+  background-color: red;
+}
+.left-navigation-top-sec{
+  overflow-x: scroll;
+  background-color: aqua;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.left-navigation-top-sec span{
+  font-size: 15px;
+  padding: 6px 12px;
+  border: 1px solid grey;
+  border-radius: 50%;
+}
+.left-navigation-list{
+  height: 100%;
+    background-color: chartreuse;
+}
 
 
+
+ .left-navigation-top-sec::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+
+}
+
+.left-navigation-top-sec::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+    height: 12px;
+}
+
+.left-navigation-top-sec::-webkit-scrollbar-thumb {
+    background: #CF1134;
+    border-radius: 10px;
+}
+
+.left-navigation-top-sec::-webkit-scrollbar-thumb:hover {
+    background: #CF1134;
+}
 
 
 
